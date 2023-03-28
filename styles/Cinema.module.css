@@ -1,0 +1,25 @@
+.main {
+  height: 100%;
+  background-color: #FDCD32;
+  color: #000000;
+  border-radius: 3px;
+  padding: 5px;
+  margin-top: 12px;
+}
+
+.main > div {
+  border-left: solid 2px;
+  padding-left: 5px;
+}
+
+.main > div > h3 {
+  margin: 12px 0;
+}
+
+@media screen and (min-width: 768px) {
+  /* tablet size and up */
+  .main {
+    margin-top: 0;
+  }
+
+}

@@ -1,0 +1,37 @@
+
+  .flexContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imgContainer {
+    position: relative;
+    width: 100%;
+  }
+
+  .image {
+    object-fit: contain;
+    position: static !important;
+    border-radius: 3px;
+  }
+
+  @media screen and (min-width: 768px) {
+    /* tablet size and up */
+    .flexContainer {
+      padding: 30px;
+      gap: 30px;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: flex-start;
+    }
+
+    .imgContainer {
+      flex: 1 0 0;
+    }
+
+    .roomsContainer {
+      flex: 1 0 0;
+    }
+  
+  }
+  
