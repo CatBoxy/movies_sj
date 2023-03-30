@@ -34,7 +34,7 @@ export default function Movie({ movieData, error }: { movieData: Movie, error: a
     }, []);
 
     return (
-        <Layout>
+        <Layout title={movie?.name!}>
             <div className={styles.flexContainer}>
                 <div className={styles.imgContainer}>
                     <Image

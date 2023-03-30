@@ -3,12 +3,12 @@ import styles from '<cines-sj>/styles/Layout.module.css'
 import { Nav } from './nav';
 
 
-export function Layout({ children }: { children: React.ReactNode }) {
+export function Layout({ children, title }: { children: React.ReactNode, title: string | undefined }) {
     return (
         <>
             <main className={styles.main}>
                 <div className={styles.mainLayout}>
-                    <Nav />
+                    <Nav title={title} />
                     {children}
                 </div>
             </main>
